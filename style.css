@@ -1,0 +1,45 @@
+
+
+
+
+
+body{
+    background-color: rgb(4, 217, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fiverr_wrapper{
+    width: 600px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.cc{
+    text-align: center;
+    font-size: 100px;
+    margin: 50px auto;
+}
+.counter{
+    margin-top: 10px;
+    font-size: 50px;
+    vertical-align: middle;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #28a745;
+}
+
+.age_calculater{
+    width: 600px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.age_counter{
+    margin-top: 10px;
+    font-size: 50px;
+    vertical-align: middle;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #28a745;
+}
