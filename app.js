@@ -97,6 +97,82 @@ fiverr_order.addEventListener('submit', function(e){
 
 
 
+ /**
+  * To-Do List
+  */
+
+ const do_form = document.getElementById('do_form');
+ const list = document.getElementById('list');
+
+
+ do_form.addEventListener('submit', function(e){
+
+    e.preventDefault();
+
+
+    let do_name = this.querySelector('input[name="do_name"]').value;
+    let select = this.querySelector('select[name="select"]').value;
+
+
+    if( do_name == '' || select == ''){
+
+        alert('All fields are required');
+
+    }else{
+
+        let li = document.createElement('li');
+        li.className = 'list-group-item';
+
+        let closebtn = document.createElement('button');
+        closebtn.innerHTML = '&times;';
+        closebtn.className = 'close';
+
+        let do_tex = document.createTextNode(do_name);
+
+        
+        li.appendChild(closebtn);
+        li.insertBefore(do_tex, closebtn);
+        list.appendChild(li);
+        
+
+        this.querySelector('input[name="do_name"]').value ='';
+
+        closebtn.addEventListener('click', function(){
+
+            this.parentElement.remove();
+
+        });
+
+    }
+
+    
+
+ });
+
+
+
+ 
+
+/**
+ * Add New Product
+ */
+
+const add_product = document.getElementById('add_product');
+const sees = document.querySelector('.sees');
+const add_box = document.querySelector('.add_box');
+
+
+add_product.addEventListener('click', function(){
+
+    add_box.style.display ='block';
+
+});
+sees.addEventListener('click', function(){
+
+    add_box.style.display ='none';
+
+});
+
 
 
 
